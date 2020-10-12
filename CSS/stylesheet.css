@@ -1,1 +1,5 @@
-body{background-color: beige;}
+body{background-color : beige}
+.navbar{
+    background-color: lightblue;
+    text-align : center
+}
