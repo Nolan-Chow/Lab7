@@ -13,22 +13,33 @@ h1{
 
 .flex-nav {
     display: flex;
+    flex-direction: column;
     list-style-type: none;
     padding: 0;
     justify-content: center;
 }
-.list-item {
-    padding: 5px;
-}
 .course {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
     padding: 0;
 }
-.item {
-    border-bottom: 2px solid lightgray;
-}
 .course > li {
-    padding-bottom: 15px;;
+        padding-bottom: 15px;
+    }
+.item {
+        border-bottom: 2px solid lightgray;
+    }
+@media screen and (min-width: 600px) {
+    .flex-nav {
+        flex-direction: row;
+    }
+    .list-item {
+        padding: 10px;
+    }
+    .course {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        padding: 0;
+    }
 }
