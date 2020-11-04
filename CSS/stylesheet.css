@@ -4,9 +4,31 @@ body{
 
 .navbar{
     background-color: lightblue;
-    text-align : center
+    text-align: center;
 }
 
 h1{
     font-family: 'Montserrat', sans-serif;
+}
+
+.flex-nav {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+.list-item {
+    padding: 5px;
+}
+.course {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    list-style-type: none;
+    padding: 0;
+}
+.item {
+    border-bottom: 2px solid lightgray;
+}
+.course > li {
+    padding-bottom: 15px;;
 }
