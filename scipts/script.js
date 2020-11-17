@@ -1,4 +1,4 @@
-let courseList = [
+const courseList = [
     course1 = {
         code: "ACIT 1515",
         name: 'Scripting for IT'
@@ -18,7 +18,6 @@ do {
     user_code = prompt('Enter a course code.')
 } while (isNaN(Number(user_code)) || user_code.length !== 4);
 for (let course of courseList) {
-  console.log(course.code.substring(5,9));
     if (user_code === course.code.substring(5,9)) {
         console.log(`Yes I am taking the course: ${course.code} - ${course.name}`);
         incourseList = true;
@@ -27,9 +26,9 @@ for (let course of courseList) {
 if (!incourseList) {
     courseList.push(
         course4 = {
-            code: "ACIT " + user_code,
+            code: `ACIT ${user_code}`,
             name: null
         }
       );
   console.log('Course successfully added')
-}
+};
