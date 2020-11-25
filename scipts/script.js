@@ -14,12 +14,11 @@ function createCourseArrray () {
 function findCourse (arr) {
     let user_code;
     let incourseList = false;
-    let count = 1;
     do {
         user_code = prompt('Enter a course code.')
     } while (isNaN(Number(user_code)) || user_code.length !== 4);
     for (let course of arr) {
-        if (user_code === course.code.substring(5,9)) {
+        if (course.code.includes(user_code)) {
             let matchingcourses = document.getElementsByClassName(user_code);
             incourseList = true;
             for (green of matchingcourses) {
